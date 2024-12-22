@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page-2</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+table,th,td{
+border:10px solid white;
+
+}
+
+table{
+border-spacing:38px;
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">TICKET BOOKING</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#list-your-shows">ListYourShows</a>
+                        <ul class="dropdown-menu">
+                            <li ><a href="ContactUs.html">ContactUs</a></li>
+                            <li><a href="manage-shows.html">ManageShows</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="corporates.html">Corporates</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="giftcards.html">Gift Cards</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>BOOK YOUR TICKET</h1>
+            <p>Book and enjoy your show!</p>
+            <a href="booknow1.html" class="cta-btn">Book Now</a>
+        </div>
+    </section>
+   <center>  <h1 >Shows Avaliable &#128588; </h1>
+ <p>Now Available for your to watch in your nearest Theaters.</p></center>
+       <table>
+               <tr>
+                  <th>
+                    <img src="pushpa.avif">
+                   <h3>Pushpa 2: The Rule</h3>
+                    <p>Detail about this show.</p>
+
+                  </th>
+                  <th>
+                    <img src="mufasa.avif">
+                    <h3>Mufasa: The Lion King</h3>
+                    <p>Detail about this show.</p>
+                  </th>
+                  <th>
+
+                    <img src="sololeveling.avif" alt="sololeveling">
+                    <h3>Solo Leveling: ReAwakening</h3>
+                    <p>Detail about this show.</p>
+                  </th>
+             </tr>
+       <tr>
+                  <th>
+                    <img src="kalki.avif">
+                   <h3>Pushpa 2:Kalki</h3>
+                    <p>Detail about this show.</p>
+
+                  </th>
+                  <th>
+                    <img src="moana2.avif">
+                    <h3>Moana2</h3>
+                    <p>Detail about this show.</p>
+                  </th>
+                  <th>
+
+                    <img src="missyou.avif" alt="sololeveling">
+                    <h3>Miss You</h3>
+                    <p>Detail about this show.</p>
+                  </th>
+             </tr>
+      </table>
+  <script>
+   // Add JavaScript for dropdown functionality
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+             dropdown.addEventListener('mouseenter', () => {
+                dropdown.querySelector('.dropdown-menu').style.display = 'block';
+             });
+
+            dropdown.addEventListener('mouseleave', () => {
+               dropdown.querySelector('.dropdown-menu').style.display = 'none';
+            });
+        });
+
+   </script>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Book Your Ticket. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
